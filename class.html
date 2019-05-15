@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        class Person{
+            constructor(name,age){
+                console.log(`name:${name},age:${age}`)
+                this.name = name
+                this.age = age
+            }
+            showName(){
+                console.log(this.name)
+            }
+            showAge(){
+                console.log(this.age)
+            }
+        }
+        let p1 = new Person('jack',18)
+        p1.showAge()
+        p1.showName()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
