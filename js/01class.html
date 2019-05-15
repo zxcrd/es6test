@@ -7,10 +7,21 @@
     <title>Document</title>
     <script>
         class Person{
-            constructor(){
-                
+            constructor(name,age){
+                console.log(`name:${name},age:${age}`)
+                this.name = name
+                this.age = age
+            }
+            showName(){
+                console.log(this.name)
+            }
+            showAge(){
+                console.log(this.age)
             }
         }
+        let p1 = new Person('jack',18)
+        p1.showAge()
+        p1.showName()
     </script>
 </head>
 <body>
